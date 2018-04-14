@@ -1,0 +1,48 @@
+$orange: #F28830;
+
+$primary-color: #3023ae;
+$secondary-color: #c96dd8;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  color: #fff;
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 34px;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+li {}
+
+.bold {
+  font-weight: 600;
+}

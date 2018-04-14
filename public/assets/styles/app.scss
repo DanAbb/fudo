@@ -1,0 +1,38 @@
+#app {
+  @include gradientBackground($secondary-color, $primary-color);
+
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.triangles {
+  background: url('/assets/img/Background.png');
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.hideme {
+  display: none;
+}
+
+.thanks {
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  .button-container {
+    margin: 50px auto;
+    flex: 0 1 100px;
+  }
+
+  a {
+    text-decoration: none;
+    line-height: 3rem;
+    display: block;
+  }
+}

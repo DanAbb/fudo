@@ -1,0 +1,53 @@
+.aboutme {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 960px;
+  padding: 50px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 420px) {
+    padding: 10px;
+    margin: 100px auto;
+  }
+
+  > * {
+    margin: 50px auto;
+  }
+
+  .design,
+  .development {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      margin: 20px 0;
+    }
+  }
+
+  p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .text {
+    flex: 0 1 70%;
+
+    @media screen and (max-width: 420px) {
+      order: 2;
+      flex: 0 0 100%;
+    }
+  }
+
+  .image {
+    flex: 0 1 20%;
+
+    @media screen and (max-width: 420px) {
+      order: 1;
+      flex: 0 0 100%;
+      margin-bottom: 50px;
+    }
+  }
+}

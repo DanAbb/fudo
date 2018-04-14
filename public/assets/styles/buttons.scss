@@ -1,0 +1,50 @@
+.btn {
+  width: 170px;
+  height: 50px;
+  border-radius: 3px;
+  border: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-primary {
+  background: $orange;
+  box-shadow: 0 22px 30px -17px rgba(0, 0, 0, 0.6);
+
+  &:hover {
+    background: none;
+    border: 1px solid $orange;
+    color: $orange;
+    animation: pulse .5s;
+  }
+}
+
+.btn-secondary {
+  background: none;
+  border: 1px solid #d9d9d9;
+
+  &:hover {
+    background: #fff;
+    color: $primary-color;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}

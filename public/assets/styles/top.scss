@@ -1,0 +1,73 @@
+.top-section {
+  min-height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  @media screen and (max-width: 420px) {
+    min-height: calc(100vh + 20px);
+  }
+
+  .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+
+    @media screen and (max-width: 420px) {
+      max-width: 90%;
+    }
+
+    a,
+    svg {
+      height: 80px;
+      width: 90px;
+    }
+
+    a {
+      &:hover {
+        animation: .4s spin ease-in-out forwards;
+      }
+    }
+  }
+
+  h2 {
+    width: 100%;
+    margin: 20px auto;
+
+    @media screen and (max-width: 420px) {
+      margin: 80px auto 20px;
+    }
+  }
+
+  h1 {
+    @media screen and (max-width: 420px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .buttons {
+    margin: 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .btn {
+    margin: 10px 20px;
+    flex: 0 0 170px;
+  }
+
+  a {
+    line-height: 3rem;
+    text-decoration: none;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(720deg) scale(1.2);
+  }
+}

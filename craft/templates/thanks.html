@@ -1,0 +1,11 @@
+{% extends "_layout" %}
+
+{% block content %}
+   <section class="thanks">
+      <h1>Thanks for getting in touch {{ craft.request.getQuery('from') }}!</h1>
+      <p>I look forward to reading your mail!</p>
+      <div class="button-container">
+        <a href="/" class="btn btn-primary">go back</a>
+      </div>
+   </section>
+{% endblock %}

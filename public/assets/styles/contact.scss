@@ -1,0 +1,60 @@
+.contact {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 800px;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    margin: 50px auto 20px;
+  }
+
+  .contact-me {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 520px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-input {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  label {
+    color: #fff;
+    margin: 20px 0;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 1.4rem;
+    color: #474747;
+    box-sizing: border-box;
+
+    &:focus {
+      outline: 3px solid $secondary-color;
+    }
+
+    input {
+      height: 34px;
+    }
+
+    textarea {
+      height: auto;
+    }
+  }
+
+  .button-container {
+    margin: 50px auto;
+  }
+}
