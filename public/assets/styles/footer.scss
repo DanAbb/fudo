@@ -1,5 +1,5 @@
 .footer-wrapper {
-  height: 100vh;
+  height: 50vh;
   width: 100%;
   background: #2f0743;
   background: -moz-radial-gradient(center, ellipse cover,  #2f0743 0%, #000000 100%);
@@ -13,20 +13,49 @@
   position: relative;
 
   &::before {
-    background-image: url("data:image/svg+xml,%3Csvg version=%221.1%22 xmlns=%22http://www.w3.org/2000/svg%22 x=%220%22 y=%220%22 viewBox=%220 0 1800 26%22 preserveAspectRatio=%22none%22%3E%3Cpath fill=%22%23000%22 d=%22M900,19.8C594.4,19.8,293.9,13.1,0,0v26h1800V0C1506.1,13.1,1205.6,19.8,900,19.8z%22/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSI2MXB4IiBoZWlnaHQ9IjgwcHgiIHZpZXdCb3g9IjAgMCA2MSA4MCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5Hcm91cCAzPC90aXRsZT4gICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+ICAgIDxkZWZzPjwvZGVmcz4gICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iR3JvdXAtMyIgZmlsbD0iIzA3MDEwOSI+ICAgICAgICAgICAgPHBhdGggZD0iTTAsNzkuOTg3NzQ0MSBMMCwwLjAxMjI1NTkxODUgQzAuMzMyMzQzNzQ0LDAuMDA0MTAxMTYxODQgMC42NjU2OTI5MzMsMCAxLDAgQzIzLjA5MTM5LDAgNDEsMTcuOTA4NjEgNDEsNDAgQzQxLDYyLjA5MTM5IDIzLjA5MTM5LDgwIDEsODAgQzAuNjY1NjkyOTMzLDgwIDAuMzMyMzQzNzQ0LDc5Ljk5NTg5ODggLTQuOTk2MDAzNjFlLTE2LDc5Ljk4Nzc0NDEgWiIgaWQ9IkNvbWJpbmVkLVNoYXBlIj48L3BhdGg+ICAgICAgICAgICAgPHBhdGggZD0iTTYxLC0xLjQyMTA4NTQ3ZS0xNCBMNjEsODAgQzM4LjkwODYxLDgwIDIxLDYyLjA5MTM5IDIxLDQwIEMyMSwxNy45MDg2MSAzOC45MDg2MSwwIDYxLDAgWiIgaWQ9IkNvbWJpbmVkLVNoYXBlIj48L3BhdGg+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=);
+    background-repeat: repeat;
     content: ' ';
     display: block;
-    height: 1.725rem;
-    margin-top: -18px;
-    position: absolute;;
-    width: 100%;
+    position: absolute;
     z-index: 10;
-    top: -5px;
+    top: -40px;
+    width: 100%;
+    height: 80px;
   }
 
   .logo {
     height: 1000px;
     // width: 600px;
+  }
+
+  img {
+    height: 150px;
+    width: auto;
+  }
+
+  .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 30px;
+
+    @media screen and (max-width: 420px) {
+      max-width: 90%;
+    }
+
+    a,
+    svg {
+      height: 50px;
+      width: 50px;
+    }
+
+    a {
+      &:hover {
+        animation: .4s spin ease-in-out forwards;
+      }
+    }
   }
 }

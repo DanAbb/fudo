@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="150px" viewBox="0 0 284 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" fill="#070109">
+            <path d="M0,-1.42108547e-14 C50,-4.73695157e-15 75,25 75,75 C75,125 100,150 150,150 L0,150 L0,-1.42108547e-14 Z" id="Rectangle"></path>
+            <path d="M134,0 C184,9.47390314e-15 209,25 209,75 C209,125 234,150 284,150 L134,150 L134,0 Z" id="Rectangle-Copy" transform="translate(209.000000, 75.000000) scale(-1, 1) translate(-209.000000, -75.000000) "></path>
+        </g>
+    </g>
+</svg>

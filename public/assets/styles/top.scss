@@ -1,5 +1,5 @@
 .top-section {
-  min-height: calc(100vh - 150px);
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,12 +9,20 @@
     min-height: calc(100vh + 20px);
   }
 
+  .logo {
+    img {
+      height: 150px;
+      width: auto;
+    }
+  }
+
   .social {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     max-width: 100%;
+    margin-top: 20px;
 
     @media screen and (max-width: 420px) {
       max-width: 90%;
@@ -22,8 +30,8 @@
 
     a,
     svg {
-      height: 80px;
-      width: 90px;
+      height: 50px;
+      width: 60px;
     }
 
     a {
@@ -36,10 +44,6 @@
   h2 {
     width: 100%;
     margin: 20px auto;
-
-    @media screen and (max-width: 420px) {
-      margin: 80px auto 20px;
-    }
   }
 
   h1 {
@@ -49,7 +53,7 @@
   }
 
   .buttons {
-    margin: 50px 0;
+    margin: 20px 0 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -61,8 +65,10 @@
   }
 
   a {
-    line-height: 3rem;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

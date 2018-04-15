@@ -1,5 +1,6 @@
 <div id="contact" class="contact">
-  <h1>Contact Moi</h1>
+  <h1>Get in touch</h1>
+  <p>If you want to contact me to discuss a quote or for any other reason, please use the form below, or email me at <span class="bold">dan@dabb.io</span></p>
 
   {% macro errorList(errors) %}
     {% if errors %}
@@ -31,7 +32,7 @@
     </div>
 
     <div class="form-input">
-      <label for="message">What do you want?</label>
+      <label for="message">Comments?</label>
       <textarea rows="6" id="message" name="message">{% if message is defined %}{{ message.message }}{% endif %}</textarea>
       {{ message is defined and message ? errorList(message.getErrors('message')) }}
     </div>

@@ -14,8 +14,7 @@
     margin: 50px auto;
   }
 
-  .design,
-  .development {
+  .section {
     display: flex;
     flex-flow: row wrap;
     text-align: left;
@@ -27,9 +26,34 @@
     }
   }
 
-  p {
-    line-height: 2rem;
-    font-size: 1.2rem;
+  p, li {
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+
+  ul {
+    margin: 10px 0;
+  }
+
+  li {
+    list-style-type: square;
+  }
+
+  img {
+    width: 200px;
+    height: auto;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    text-decoration: none;
+
+    @media screen and (max-width: 420px) {
+      margin: 20px auto;
+    }
   }
 
   .text {
@@ -38,16 +62,49 @@
     @media screen and (max-width: 420px) {
       order: 2;
       flex: 0 0 100%;
+      text-align: center;
     }
   }
 
   .image {
     flex: 0 1 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 420px) {
       order: 1;
       flex: 0 0 100%;
-      margin-bottom: 50px;
+      margin-bottom: 10px;
     }
   }
+
+  .management {
+    .text {
+      flex: 0 1 50%;
+
+      @media screen and (max-width: 420px) {
+        flex: 0 0 100%;
+      }
+    }
+
+    .image {
+      flex: 1 1 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media screen and (max-width: 420px) {
+        order: 1;
+        flex: 0 0 100%;
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+
 }
