@@ -7,6 +7,7 @@
 
   @media screen and (max-width: 420px) {
     min-height: calc(100vh + 20px);
+    padding-top: 30px;
   }
 
   .logo {
@@ -49,6 +50,7 @@
   h1 {
     @media screen and (max-width: 420px) {
       margin-bottom: 40px;
+      font-size: 1.8rem;
     }
   }
 
@@ -62,6 +64,11 @@
   .btn {
     margin: 10px 20px;
     flex: 0 0 170px;
+
+    @media screen and (max-width: $screen-md) {
+      margin: 5px 10px;
+      flex: 0 0 140px;
+    }
   }
 
   a {

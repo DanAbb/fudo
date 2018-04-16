@@ -7,4 +7,15 @@ import smoothScroll from './helpers/smooth-scroll';
 
 document.addEventListener('DOMContentLoaded', () => {
    smoothScroll();
+   viewFlows();
 });
+
+function viewFlows() {
+  const flowbtn = document.querySelector('.view-flows')
+  const flows = document.querySelector('.order-flow')
+
+  flowbtn.addEventListener('click', function () {
+    flows.classList.toggle('open')
+    flowbtn.textContent = flowbtn.textContent.trim() === 'View Flows' ? 'Hide Flows' : 'View Flows'
+  })
+}

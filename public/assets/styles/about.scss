@@ -39,9 +39,16 @@
     list-style-type: square;
   }
 
-  img {
-    width: 200px;
-    height: auto;
+  .image {
+    img {
+      width: 200px;
+      height: auto;
+  
+      @media screen and (max-width: $screen-md) {
+        height: 300px;
+        width: auto;
+      }
+    }
   }
 
   .btn {

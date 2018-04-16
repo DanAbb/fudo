@@ -1,0 +1,89 @@
+.order-flow {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s ease-in-out;
+
+  &.open {
+    max-height: 1000px;
+
+    @media screen and (max-width: $screen-md) {
+      max-height: 7000px;
+    }
+  }
+
+  img {
+    height: 300px;
+    width: auto;
+  }
+  
+  h4 {
+    color: $white;
+  }
+
+  .marto {
+    margin-top: 50px;
+  }
+}
+
+.customer-1-flow {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: row wrap;
+
+  img {
+    @media screen and (max-width: $screen-md) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  > * {
+    margin: 20px;
+  }
+}
+
+.kitchen-flow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+
+  .order {
+    margin: 20px;
+  }
+
+  img {
+    @media screen and (max-width: $screen-md) {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+.divide {
+  height: 2px;
+  width: 100%;
+  background: transparentize($color: $white, $amount: .9);
+
+  @media screen and (max-width: $screen-md) {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

@@ -142,8 +142,19 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 // Parent constructors are not called in IE. ima.js polyfill with fix this issue.
 document.addEventListener('DOMContentLoaded', function () {
-   (0, _smoothScroll2.default)();
+  (0, _smoothScroll2.default)();
+  viewFlows();
 });
+
+function viewFlows() {
+  var flowbtn = document.querySelector('.view-flows');
+  var flows = document.querySelector('.order-flow');
+
+  flowbtn.addEventListener('click', function () {
+    flows.classList.toggle('open');
+    flowbtn.textContent = flowbtn.textContent.trim() === 'View Flows' ? 'Hide Flows' : 'View Flows';
+  });
+}
 
 },{"./helpers/factory":1,"./helpers/smooth-scroll":2,"babel-polyfill":4,"ima.js-babel6-polyfill":299,"whatwg-fetch":302}],4:[function(require,module,exports){
 (function (global){

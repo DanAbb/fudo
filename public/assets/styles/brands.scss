@@ -1,5 +1,13 @@
 .brands {
   margin: 50px auto;
+
+  h2 {
+    @media screen and (max-width: $screen-md) {
+      font-size: 2.2rem;
+      padding: 0 20px;
+      font-weight: bold;
+    }
+  }
 }
 
 .brands-img {
