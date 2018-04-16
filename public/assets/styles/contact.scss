@@ -13,6 +13,12 @@
     margin: 50px auto 20px;
   }
 
+  p {
+    @media screen and (max-width: $screen-md) {
+      padding: 0 10px;
+    }
+  }
+
   .contact-me {
     display: flex;
     flex-flow: column nowrap;

@@ -24,6 +24,25 @@
     h3 {
       margin: 20px 0;
     }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-flow: row wrap;
+
+      @media screen and (max-width: $screen-md) {
+        justify-content: center;
+      }
+
+      span {
+        margin-right: 20px;
+
+        @media screen and (max-width: $screen-md) {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   p, li {
@@ -36,7 +55,13 @@
   }
 
   li {
-    list-style-type: square;
+    list-style-type: disc;
+    margin-left: 20px;
+
+    @media screen and (max-width: $screen-md) {
+      list-style-type: none;
+      font-weight: normal;
+    }
   }
 
   .image {
